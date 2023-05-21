@@ -8,11 +8,11 @@
     }
 	.top-bar {
         background-color: #004080;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         justify-content: space-around;
 		padding: 10px;
-        margin-left: 200px;
+        margin-left: 210px;
     }
 
     .top-bar a {
@@ -22,9 +22,9 @@
     }
 	.sidebar {
         background-color: lightblue;
-        padding: 10px;
+        padding: 20px;
         width: 200px;
-        height: 100%;
+        height: 90%;
         position: fixed;
         left: 0;
         top: 0;
@@ -44,7 +44,25 @@
         color: white;
         text-decoration: none;
         font-weight: bold;
+		font-size: 24px;
     }
+	  .sidebar ul ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+    .sidebar ul ul li {
+        margin-bottom: 10px;
+		font-size: 14px;
+    }
+	.sidebar-item + .sidebar-item {
+        margin-top: 50px;
+    }
+	  #contact {
+        color: white;
+        padding: 10px;
+        margin-left: 200px;
 </style>
 </head>
 <body>
@@ -59,23 +77,24 @@
     </div>
 	<div class="sidebar">
         <ul>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#recent_publications">Recent Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
+			<li class="sidebar-item"><a href="index.html">Home</a></li>
+            <li class="sidebar-item"><a href="#info">Info</a></li>
+            <li class="sidebar-item"><a href="#recent_publications">Recent Publications</a></li>
+            <li class="sidebar-item">
+				<a href="#contact">Contact</a></li>
+				</ul>
+		
+        <ul>
+            <li><a href="mailto:luke.crisp@outlook.fr"target="_blank">Email: luke.crisp@outlook.fr</li>
+            <li><a href="https://twitter.com/CrispLukeW"target="_blank">Twitter: @CrispLukeW</li>
+			<li><a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIN: <br> Luke Crisp
+            <li><a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: @lukew.crisp</li>
         </ul>
+    </section>
     </div>
-    <h1>Welcome to my custom webpage!</h1>
 	
 <!--content-->	
 	
-	<section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at:</p>
-        <ul>
-            <li>Email: luke.crisp@outlook.fr</li>
-            <li>Twitter: @CrispLukeW</li>
-            <li>Instagram: @lukew.crisp</li>
-        </ul>
-    </section>
+	
 </body>
 </html>
