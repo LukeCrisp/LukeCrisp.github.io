@@ -4,13 +4,15 @@
     <title>LukeCrisp</title>
 	<style>
     body {
-        background-color: lightblue;
+        background-color: #003366;
     }
 	.top-bar {
-        background-color: lightblue;
+        background-color: #004080;
         padding: 10px;
         display: flex;
         justify-content: space-around;
+		padding: 10px;
+        margin-left: 200px;
     }
 
     .top-bar a {
@@ -18,17 +20,62 @@
         text-decoration: none;
         font-weight: bold;
     }
+	.sidebar {
+        background-color: lightblue;
+        padding: 10px;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
 </style>
 </head>
 <body>
+<!--structure-->
 	<div class="top-bar">
         <a href="#home">Home</a>
         <a href="#publications">Publications</a>
-        <a href="https://twitter.com/CrispLukeW">Twitter</a>
-		<a href="https://www.linkedin.com/in/crispluke/">LinkedIN</a>
-		<a href="https://www.instagram.com/lukew.crisp/">Instagram</a>
-		<a href="mailto:luke.crisp@outlook.fr">Email</a>
+        <a href="https://twitter.com/CrispLukeW"target="_blank">Twitter</a>
+		<a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIN</a>
+		<a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram</a>
+		<a href="mailto:luke.crisp@outlook.fr"target="_blank">Email</a>
+    </div>
+	<div class="sidebar">
+        <ul>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#recent_publications">Recent Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
     <h1>Welcome to my custom webpage!</h1>
+	
+<!--content-->	
+	
+	<section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email: luke.crisp@outlook.fr</li>
+            <li>Twitter: @CrispLukeW</li>
+            <li>Instagram: @lukew.crisp</li>
+        </ul>
+    </section>
 </body>
 </html>
