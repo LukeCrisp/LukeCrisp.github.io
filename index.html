@@ -6,6 +6,14 @@
     body {
         background-color: #003366;
     }
+	
+    .content {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px;
+		margin: 50px;
+        margin-left: 260px;
+    }
+	
 	.top-bar {
         background-color: #004080;
         padding: 20px;
@@ -66,6 +74,7 @@
 </style>
 </head>
 <body>
+	 
 	<div class="top-bar">
         <a href="#home">Home</a>
         <a href="#publications">Publications</a>
@@ -74,6 +83,20 @@
 		<a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram</a>
 		<a href="mailto:luke.crisp@outlook.fr"target="_blank">Email</a>
     </div>
+	<div class="content">
+        <h1>Understanding the unknown: AI in our education</h1>
+        <div id="text-container"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum felis a finibus ultrices.</p>
+    </div>
+	<script>
+    // Fetch the content from the text file
+    fetch('AI_in_education.txt')
+        .then(response => response.text())
+        .then(content => {
+            const textContainer = document.getElementById('text-container');
+            textContainer.textContent = content;
+        });
+</script>
 	<div class="sidebar">
         <ul>
 			<li class="sidebar-item"><a href="index.html">Home</a></li>
