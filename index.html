@@ -91,19 +91,7 @@
             <li><a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: <br> @lukew.crisp</li>
         </ul>
 			<li class="sidebar-item"><a href="#info">Info</a></li>
-			<div class="sidebar-text">
-				<div id="bio"></div>
-			</div>
-<script>
-    // Fetch the content from the text file
-    fetch('info.txt')
-        .then(response => response.text())
-        .then(content => {
-            const textContainer = document.getElementById('bio');
-            const formattedContent = content.replace(/\n/g, '<br>'); // Replace newline characters with <br> tags
-      textContainer.innerHTML = formattedContent;
-        });
-</script>
+
     </section>
     </div>	
 	
