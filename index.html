@@ -73,7 +73,7 @@
         .then(response => response.text())
         .then(content => {
             const textContainer = document.getElementById('text-container');
-            textContainer.textContent = content;
+            textContainer.innerHTML = content;
         });
 </script>
 	<div class="sidebar">
