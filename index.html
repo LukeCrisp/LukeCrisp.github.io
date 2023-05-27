@@ -58,13 +58,14 @@
         color: white;
         padding: 10px;
         margin-left: 200px;
+		}
 </style>
 </head>
 <body>
 	
 	<div class="content">
         <h1>Understanding the unknown: AI in our education</h1>
-        <div id="text-container"></div>
+        <div id="article1"></div>
         <p>Written by Luke Crisp, first published in the IE University student Newspaper: the IE Stork</p>
     </div>
 	<script>
@@ -72,7 +73,7 @@
     fetch('AI_in_education.txt')
         .then(response => response.text())
         .then(content => {
-            const textContainer = document.getElementById('text-container');
+            const textContainer = document.getElementById('article1');
             const formattedContent = content.replace(/\n/g, '<br>'); // Replace newline characters with <br> tags
       textContainer.innerHTML = formattedContent;
         });
@@ -91,14 +92,14 @@
         </ul>
 			<li class="sidebar-item"><a href="#info">Info</a></li>
 			<div class="sidebar-text">
-				<div id="text-container"></div>
+				<div id="bio"></div>
 			</div>
 <script>
     // Fetch the content from the text file
     fetch('info.txt')
         .then(response => response.text())
         .then(content => {
-            const textContainer = document.getElementById('text-container');
+            const textContainer = document.getElementById('bio');
             const formattedContent = content.replace(/\n/g, '<br>'); // Replace newline characters with <br> tags
       textContainer.innerHTML = formattedContent;
         });
