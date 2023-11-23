@@ -7,61 +7,39 @@
     body {
         background-color: #C0C0C0;
 		font-size: 24px;
-		margin-left: 250px;
+		margin-left: 10px;
     }
 	
     .content {
         background-color: rgba(0, 0, 0, 0.2);
         padding: 10px;
 		margin: 10px;
-        margin-left: 260px;
+        margin-left: 50px;
     }
+	header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
 
-	.sidebar {
-        background-color: #2E5984;
-        padding: 20px;
-        width: 200px;
-        height: 90%;
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
 
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
 
-    .sidebar li {
-        margin-bottom: 10px;
-    }
-
-    .sidebar a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-		font-size: 16px;
-
-    }
-	  .sidebar ul ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        color: white;
-    }
-    .sidebar ul ul li {
-        margin-bottom: 10px;
-		font-size: 14px;
-    }
-	.sidebar-item + .sidebar-item {
-        margin-top: 30px;
-    }
-	  #contact {
-        color: white;
-        padding: 10px;
-        margin-left: 200px;
-		}
+        nav a:hover {
+            background-color: #555;
+        }
+		
 	.content p {
     font-size: 12px; 
 	}
@@ -78,21 +56,16 @@
 </head>
 
 <body>
-	<div class="sidebar">
-        <ul>
-            <li class="sidebar-item"><a href="#contact" style="font-size: 30px;"> <strong> Contact Information </strong></a></li>
-				
-			<ul>
-				<li><a href="mailto:luke.crisp@outlook.fr"target="_blank">Email: luke.crisp@outlook.fr </a></li>
-				<li><a href="https://twitter.com/CrispLukeW"target="_blank">Twitter: <br> @CrispLukeW </a></li>
-				<li><a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIn: <br> Luke Crisp </a></li>
-				<li><a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: <br> @lukew.crisp </a></li>
-			</ul>
-			   	<li class="sidebar-item"></a></li>
 
-		</ul>
-
-    </div>
+<header>
+    <p>Contact Information</p>
+    <nav>
+        <a href="mailto:luke.crisp@outlook.fr"target="_blank">Email: luke.crisp@outlook.fr </a>
+        <a href="https://twitter.com/CrispLukeW"target="_blank">Twitter: <br> @CrispLukeW </a>
+        <a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIn: <br> Luke Crisp </a>
+		<a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: <br> @lukew.crisp </a>
+    </nav>
+</header>
 	<div class="body">
 		<p style="font-size: 56px;"> <strong> Luke Crisp </strong></p>
 		<p style="font-size: 30px;"> <strong> Introduction </strong></p>
@@ -116,7 +89,7 @@ ais-role-in-education/"target="_blank">Embracing the Unknown: AI’s role in Edu
 	<p style="font-size: 18px;"> A simple desk build that I first built 7 years ago and have since improved and used a lot. </p>
 		<img src="desk.jpg" alt="Picture of my custom desk">
 <ul><li> <p style="font-size: 22px;"> Tensegity Table <p/></li></ul>
-	<p style="font-size: 18px;"> A project designed to test my skills, although not entirely succesful, I learnt a lot and have since figure out a solution to my problems. <p>
+	<p style="font-size: 18px;"> A project designed to test my skills; although not entirely succesful, I learnt a lot and have since figured out a solution to my problems. <p>
 		<img src="table.jpg" alt="Picture of my tensegrity table">
 <ul><li> <p style="font-size: 22px;"> Lego Storage Crate <p/></li></ul>
 	<p style="font-size: 18px;">  A crate to store my lego so that it is nicely stored and looks like a proper piece of furniture, rather than a toy. <p>
