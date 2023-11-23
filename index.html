@@ -57,60 +57,65 @@
             line-height: 1;
     }
 	
-	/* Basic styling for the dropdown */
-        .dropdown {
+    .dropdown {
             position: relative;
             display: inline-block;
-        }
+    }
 
-        /* Style for the dropdown button */
-        .dropdown-btn {
+    .dropdown-btn {
             padding: 10px;
             background-color: #3498db;
             color: #fff;
             border: none;
             cursor: pointer;
-			width: 600%;
-        }
+			width: 1000%;
+     }
 
-        /* Style for the dropdown content */
-        .dropdown-content {
+    .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-			width: 600%;
+			width: 1000%;
             min-width: 160px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
-        }
+    }
 
-        /* Style for the dropdown content links */
-        .dropdown-content a {
+    .dropdown-content a {
             display: block;
             text-decoration: none;
             color: #333;
             background-color: #f9f9f9;
             padding: 12px 16px;
-        }
+    }
 
-        /* Change color on hover for dropdown links */
-        .dropdown-content a:hover {
+    .dropdown-content a:hover {
             background-color: #ddd;
-        }
+    }
 
-        /* Show the dropdown content when the dropdown button is hovered over */
-        .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content {
             display: block;
-        }
+    }
 
-        /* Style for the image inside the dropdown */
-        .dropdown-content img {
+    .dropdown-content img {
             max-width: 100%;
             height: auto;
             display: block;
             margin-bottom: 10px;
-        }
+    }
 	
+	ul {
+            padding: 0;
+    }
+
+    li {
+            margin-bottom: 10px; 
+    }
+
+    li a {
+            text-decoration: none;
+            color: #3498db; /* Link color */
+    }
 	
 </style>
 </head>
@@ -158,10 +163,25 @@ industries.  </p>
 				</div>
 		<ul><li> <p style="font-size: 22px;"> Tensegity Table <p/></li></ul>
 			<p style="font-size: 18px;"> A project designed to test my skills; although not entirely succesful, I learnt a lot and have since figured out a solution to my problems. <p>
-				<img src="table.jpg" alt="Picture of my tensegrity table">
+				<div class="dropdown">
+					<button class="dropdown-btn">Picture</button>
+					<div class="dropdown-content">
+						<a href="#">
+							<img src="table.jpg" alt="Image Description">
+						</a>
+					</div>
+				</div>
 		<ul><li> <p style="font-size: 22px;"> Lego Storage Crate <p/></li></ul>
 			<p style="font-size: 18px;">  A crate to store my lego so that it is nicely stored and looks like a proper piece of furniture, rather than a toy. <p>
-				<img src="crate.jpg" alt="Picture of my lego storage crate">
+				<div class="dropdown">
+					<button class="dropdown-btn">Picture</button>
+					<div class="dropdown-content">
+						<a href="#">
+							<img src="crate.jpg" alt="Image Description">
+							<img src="crate2.jpg" alt="Image Description">
+						</a>
+					</div>
+				</div>
 	<h2>Space Engineers mods</h2>
 			<P style="font-size: 16px;">Space Engineers is a sandbox game about engineering, construction, exploration and survival in 
 space and on planets. Players build space ships, wheeled vehicles, space stations, planetary outposts of various sizes and 
