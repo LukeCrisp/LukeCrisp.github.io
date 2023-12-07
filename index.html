@@ -2,136 +2,20 @@
 <html>
 <head>
     <title>LukeCrisp</title>
-	<style>
-
-    body {
-        background-color: #ABC7E3;
-		font-size: 24px;
-		margin-left: 10px;
-		margin-right: 15px;
-		line-height: 0.8;
-		color: #1C284E
-    }
-	
-    .content {
-        background-color: rgba(0, 0, 0, 0.2);
-        padding: 10px;
-		margin: 10px;
-        margin-left: 50px;
-    }
-	header {
-            background-color: #174D7C;
-            padding: 5px;
-            text-align: center;
-            color: #0e1427;
-    }
-
-    nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1C284E;
-    }
-
-    nav a {
-            color: #767e94;
-            text-decoration: none;
-            padding: 7px 10px;
-            display: inline-block;
-    }
-
-        nav a:hover {
-            background-color: #192446;
-    }
-		
-	.content p {
-			font-size: 12px; 
-	}
-	
-	img {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			max-width: 60%;
-			height: auto;
-	}
-	
-	p {
-            line-height: 1;
-    }
-	
-    .dropdown {
-            position: relative;
-            display: inline-block;
-    }
-
-    .dropdown-btn {
-            padding: 10px;
-            background-color: #4C7D8E;
-            color: #0e1427;
-            border: none;
-            cursor: pointer;
-			width: 1000%;
-     }
-
-    .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-			width: 1000%;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-    }
-
-    .dropdown-content a {
-            display: block;
-            text-decoration: none;
-            color: #333;
-            background-color: #f9f9f9;
-            padding: 12px 16px;
-    }
-
-    .dropdown-content a:hover {
-            background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-            display: block;
-    }
-
-    .dropdown-content img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
-    }
-	
-	ul {
-			list-style-type: none;
-            padding: 0;
-    }
-
-    li {
-            margin-bottom: 10px; 
-    }
-
-    li a {
-            text-decoration: none;
-            color: #366BA1; /* Link color */
-    }
-	
-</style>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
-    <p>Contact Information</p>
+    <p>Website Navigation</p>
     <nav>
-        <a href="mailto:luke.crisp@outlook.fr"target="_blank">Email: <br> luke.crisp@outlook.fr </a>
-        <a href="https://twitter.com/CrispLukeW"target="_blank">Twitter/X: <br> @CrispLukeW </a>
-        <a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIn: <br> Luke Crisp </a>
-		<a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: <br> @lukew.crisp </a>
+        <ul><a href="index.html">Home</a></ul>
+        <ul><a href="about.html">About</a></ul>
+        <ul><a href="publi.html">Publications</a></ul>
+        <ul><a href="projects.html">Projects</a></ul>
     </nav>
 </header>
 
@@ -143,76 +27,19 @@ logistics and research and a strong interest in new technology and innovation. H
 and research skills as well as my project management and stakeholder interaction skills during my studies,
 I am looking for a position in research, data analysis or public policy, in the technology and energy
 industries.  </p> 
-	<p> If you're interested in my profile, feel free to reach out to me and check out my CV. </p>
-	<a href="CV.html">CV</a>
-<h1>Publications</h1>
-	<h2>Publications in English</h2>
-		<h3>IE Stork</h3>
-			<P style="font-size: 18px;">Student run newspaper for IE University, Madrid</p>
-	<ul>
-		<li><a href="https://www.iestork.org/embracing-the-unknown-ais-role-in-education/"target="_blank">Embracing the Unknown: AI’s role in Education</a></li>
-		<li><a href="https://www.iestork.org/ies-dubious-sustainability/"target="_blank">IE’s Dubious sustainability</a></li>
-	</ul>	
-<h1>Passion Projects</h1>
-	<h2>Data Projects</h2>
-		<ul><li> <p style="font-size: 22px;"> Paris Metro Stations </p></li></ul>
-			<p style="font-size: 18px;"> An analysis of the letters in the names of all the stations on the Paris Metro. This project was first inspired by a question asked on one of the Metro's official Twitter/X accounts asking which station names do not have a "E". <br> I decided to take it a step further and count the total amount of each letter to find the most and least common ones, and make some nice graphs.<br> The project was coded in R script. </p>
-				<h4>Highlights</h4>
-				<li style="font-size: 18px;">"E" is the most used letter at 560 uses.</li>
-				<li style="font-size: 18px;">"W" is the least used letter at 1.</li>
-				<li style="font-size: 18px;">There's an average of 1.55 "E"s per station name.</li>
-				<div class="dropdown">
-					<button class="dropdown-btn">Graph</button>
-					<div class="dropdown-content">
-						<a href="#">
-							<img src="rplot.jpg" alt="Bar graph of letter distribution">
-						</a>
-					</div>
-				</div>
-	<h2>Woodworking Projects</h2>
-		<ul><li> <p style="font-size: 22px;"> My Office Desk </p></li></ul>
-			<p style="font-size: 18px;"> A simple desk build that I first built 7 years ago and have since improved and used a lot. </p>
-				<div class="dropdown">
-					<button class="dropdown-btn">Picture</button>
-					<div class="dropdown-content">
-						<a href="#">
-							<img src="desk.jpg" alt="Picture of the desk in use">
-						</a>
-					</div>
-				</div>
-		<ul><li> <p style="font-size: 22px;"> Tensegity Table <p/></li></ul>
-			<p style="font-size: 18px;"> A project designed to test my skills; although not entirely succesful, I learnt a lot and have since figured out a solution to my problems. <p>
-				<div class="dropdown">
-					<button class="dropdown-btn">Picture</button>
-					<div class="dropdown-content">
-						<a href="#">
-							<img src="table.jpg" alt="Picture of the table">
-						</a>
-					</div>
-				</div>
-		<ul><li> <p style="font-size: 22px;"> Lego Storage Crate <p/></li></ul>
-			<p style="font-size: 18px;">  A crate to store my lego so that it is nicely stored and looks like a proper piece of furniture, rather than a toy. <p>
-				<div class="dropdown">
-					<button class="dropdown-btn">Pictures</button>
-					<div class="dropdown-content">
-						<a href="#">
-							<img src="crate.jpg" alt="Picture of the outside of the crate">
-							<img src="crate2.jpg" alt="Picture of the inside of the crate with lego">
-						</a>
-					</div>
-				</div>
-	<h2>Space Engineers mods</h2>
-			<P style="font-size: 16px;">Space Engineers is a sandbox game about engineering, construction, exploration and survival in 
-space and on planets. Players build space ships, wheeled vehicles, space stations, planetary outposts of various sizes and 
-uses, pilot ships and travel through space to explore planets and gather resources to survive. </p>
-		<ul><li><p style="font-size: 22px;">Custom Speed Mod </p></li></ul>
-			<p style="font-size: 18px;">As my start to Space Engineers modding, I made a custom speed mod that fit with some of my designs and was faster than the base game but not too fast. </p>
-	<h2>Homelab Projects</h2>
-		<ul><li><p style="font-size: 22px;">Minecraft server </p></li></ul>
-			<p style="font-size: 18px;">I created a modded Minecraft server for me and my brother to play on with Docker. It was an opportunity for me to discover Docker, Ubuntu and remote computing. </p>
-	<h2>This website</h2>
-			<p style="font-size: 18px;"> I wanted somewhere to list more of my publications and other projects I've worked on. So I decided to create this website for this purpose. I decided to code it myself as an opportunity to learn HTML. </p>
-	</div>	
+	<p> If you're interested in my profile, feel free to reach out to me and check out my CV for more information about me and what I do. </p>
+
+	
+<h1>Contact me!</h1>
+	<p>If you're interested in reaching out to me for anything, please feel free to do so at any of these points</p>
+		<a href="mailto:luke.crisp@outlook.fr"target="_blank">Email: <br> luke.crisp@outlook.fr </a>
+        <a href="https://twitter.com/CrispLukeW"target="_blank">Twitter/X: <br> @CrispLukeW </a>
+        <a href="https://www.linkedin.com/in/crispluke/"target="_blank">LinkedIn: <br> Luke Crisp </a>
+		<a href="https://www.instagram.com/lukew.crisp/"target="_blank">Instagram: <br> @lukew.crisp </a>	
+	
+	
+	
+
 </body>
 </html>
 
